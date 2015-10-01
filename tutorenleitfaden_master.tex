@@ -9,10 +9,11 @@
 \usepackage{mdwlist}
 \usepackage{graphicx}
 \usepackage{eurosym}
+\usepackage{tikzsymbols}
 \renewcommand*\familydefault{\sfdefault}
 
 \setcounter{secnumdepth}{-1}
-
+\setcounter{tocdepth}{1}
 \begin{document}
 
 \title{\textbf{Leitfaden für ESE-Tutoren 2015 für Masterstudenten}\\}
@@ -179,11 +180,14 @@ Ort der Begrüßung ist der Hörsaal POT/81 (Pothoff-Bau) und der der Vorträge 
 \item 09:00 - 10:00 Frühstück
 \item 10:00 - 12:00 Vorstellung der Professoren
 \item 12:00 - 13:00 Mittagspause
-\item 13:00 - 16:00 ESE-Spiel
-\begin{itemize*}
-  \item \small{\textit{Tutorentreff ESE-Spiel um 12:15 Uhr}}
-\end{itemize*}
+\item 13:00 - 16:00 ESE-Spiel -- \small{\textit{Tutorentreff ESE-Spiel um 12:15 Uhr}}
 \item ab 19:00 ESE-Kino im KIK (Kino im Kasten)
+\begin{itemize*}
+	\item Film wird noch nicht verraten
+	\item Eintritt für Erstis \EUR{2}
+	\item zusammen mit den Mathe- und Physik-Erstis
+	\item danach geht's in den Traumtänzer oder in die WU5 (wer will)
+\end{itemize*}
 \end{itemize*}
 
 \subsection{Freitag}
@@ -221,7 +225,7 @@ Ort der Begrüßung ist der Hörsaal POT/81 (Pothoff-Bau) und der der Vorträge 
 	\item Das wissen um Module und Lehrveranstaltungsformen wird vorausgesetzt.
 	\item Prüfungen können zwei mal wiederholt werden
 		\begin{itemize*}
-			\item 1. Wiederholung: ein Jahr(zwei Semester) Zeit
+			\item 1. Wiederholung: ein Jahr (zwei Semester) Zeit
 			\item 2. Wiederholung: nochmals ein Semester Zeit
 		\end{itemize*}
 		2. Wiederholungsprüfung nicht geschafft $\rightarrow$ Exmatrikulation, Studium nicht geschafft
@@ -308,117 +312,177 @@ Eine Zusammenstellung von fürs Studium wichtigen Dokumenten und Links zu vielen
 \end{itemize*}
 
 \section{Drucken, Kopieren, Rechentechnik}
-\begin{itemize*}
-	\item Das Rechenzentrum beinhaltet Computer-Arbeitsplätze, Wlan-Arbeitsplätze (Monitore mit VGA-Eingang, an die man sein Notebook anschließen kann), ein paar Spezialräume mit Multimedia-Equipment und eine Technik-Ausleihe (z.B. für Kameras, Beamer, etc.).
-	Die meisten PCs haben einen Dualboot mit Windows und Linux (Ubuntu).
-	\item Die Einschreibung in (die meisten) Übungen und das Abrufen der Prüfungsergebnisse geschieht über das elektronische Einschreibesystem jExam.
-	Man findet es unter http://jexam.de.
-% TODO: Format der E-Mail Adressen ist jetzt wie?
-	\item Jeder Student hat ein Emailpostfach beim ZIH mit der Adresse sNR@mail.zih.tu-dresden.de.
-	Neben POP3 und IMAP kann man die Mails auch über das Webinterface unter https://mail.zih.tu-dresden.de abrufen.
-	Es ist wichtig, das Postfach regelmäßig abzurufen oder sich die Emails an eine andere Adresse weiterzuleiten, weil unter der Adresse u.a. Informationen über Prüfungsanmeldung, Rückmeldung zum kommenden Semester etc. ankommen.
-	\item \textbf{Wichtig!} Falls noch nicht geschehen: Passwort noch heute im IDM ändern, damit morgen die Einschreibung funktioniert: https://idm-service.tu-dresden.de -- ruhig als Hausaufgabe aufgeben.
-	\item Es gibt zwei WLAN-Netze auf dem Universitätsgelände.
-	Das einfacher einzurichtende, aber unsicherere VPN/Web und das auch an anderen Universitäten (auch international) verwendete Eduroam.
-	VPN/Web ist ein offenes Netzwerk.
-	Nach dem Verbinden muss man seine Login-Daten nach dem Aufrufen der ersten Website im Browser eingeben.
-	Zum Verwenden von Eduroam sollte man die Anleitung auf der Website der TU Dresden lesen und sich falls notwendig das benötigte Zertifikat herunterladen.
-	Unter Linux funktioniert es mittlerweile mit allen wichtigen Networkmanagern (Gnome Network Manager, KNetworkmanager, wicd, auf der Konsole per wpasupplicant..).
-	Unter aktuellen Versionen von Windows und OS X reicht es sich mit dem ZIH Login anzumelden.
-	\item Der ZIH-Login gilt sowohl fürs Rechenzentrum als auch für jExam, Email und WLAN.
-	Username ist die \glqq sNr\grqq, die auf den Immatrikulationsbögen steht.
-	Passwort für den Erstlogin steht dort ebenfalls, ist aber wie bereits erwähnt dringendst abzuändern, da jegliche Funktionalität sonst stark eingeschränkt ist.
-	\item Drucken und Kopieren ist möglich im FSR-Büro (ab 2ct/Seite), über eine beim Stura zu erwerbende Kopierkarte an unterschiedlichen Standorten in der Uni (http://www.fritzsche-steinbach.de/Download/Flyer\_TU\_Dresden.pdf -- 3,7-5ct/Seite), in der SLUB (5-15ct/Seite) oder an den diversen Copyshops auf dem Unigelände.
-\end{itemize*}
+\begin{itemize}
+	\item ZIH-Login: gilt sowohl fürs Rechenzentrum als auch für jExam, Email und WLAN\\
+	Username: \glqq sNr\grqq (auf Immatrikulationsbögen)
+	Passwort: für den Erstlogin Imma-Bogen, ist aber dringendst abzuändern, da jegliche Funktionalität sonst stark eingeschränkt ist
+	\item \textbf{Deshalb wichtig!} Falls noch nicht geschehen: Passwort noch heute im IDM ändern, damit morgen die Einschreibung funktioniert: https://idm-service.tu-dresden.de -- ruhig als Hausaufgabe aufgeben.
+	\item Jeder Student hat Exchange-postfach beim ZIH
+	\begin{itemize*}
+		\item Adresse: sNR@msx.tu-dresden.de, namensbasierte Weiterleitung \\(vorname.nachname[Zahl]@mailbox.tu-dresden.de)
+		\item Abrufen: Outlook/Exchange, IMAP, \\Webinterface unter https://msx.tu-dresden.de
+		\item \textbf{Wichtig:} regelmäßig abzurufen oder an andere Adresse weiterleiten lassen\\
+		$\rightarrow$ Informationen über Prüfungsanmeldung, Rückmeldung zum kommenden Semester etc.
+	\end{itemize*}
+	\item zwei WLAN-Netze auf dem Uni-Gelände:
+	\begin{itemize*}
+		\item VPN/Web: einfacher einzurichten, offenes Netzwerk\\
+		$\rightarrow$ nach dem Aufrufen der ersten Website Login-Daten im Browser eingeben
+		\item eduroam: auch an anderen Universitäten (sogar international) verwendet\\
+		Einrichten: Anleitung auf der Website der TU Dresden, falls notwendig benötigtes Zertifikat herunterladen\\
+		- Linux: funktioniert mittlerweile mit allen wichtigen Networkmanagern (Gnome Network Manager, KNetworkmanager, wicd, auf der Konsole per wpasupplicant...)\\
+		- Windows/OS X: einfach mit ZIH Login anmelden
+	\end{itemize*}
+	\item Rechenzentrum:
+	\begin{itemize*}
+		\item Computer-Arbeitsplätze (meist Dualboot mit Windows und Linux (Ubuntu)) und Wlan-Arbeitsplätze (Monitore mit VGA-Eingang, an die man sein Notebook anschließen kann)
+		\item Spezialräume mit Multimedia-Equipment
+		\item Technik-Ausleihe (z.B. für Kameras, Beamer, etc.)
+	\end{itemize*}
+	\item Drucken und Kopieren: 
+	\begin{itemize*}
+		\item im FSR-Büro (ab 2ct/Seite)
+		\item an unterschiedlichen Standorten in der Uni mit beim Stura zu erwerbender Kopierkarte (3,7-5ct/Seite)
+		\item in der SLUB (5-15ct/Seite)
+		\item an den diversen Copyshops auf dem Unigelände
+	\end{itemize*}
+	\item MS DreamSpark: -- Verweis auf Kram in den Tüten: Zum Beispiel die Blöcke sind von DreamSpark gesponsert
+	\begin{itemize*}
+		\item kostenlose Microsoft Software für Studenten (Windows, Visual Studio,...)
+		\item seit diesem Semester ohne Registrierung einfach mit ZIH-Login nutzbar
+	\end{itemize*}
+\end{itemize}
+
 
 \section{Studentische Selbstverwaltung}
+
 \subsection{Fachschaftsrat}
-Der Fachschaftsrat ist die Vertretung der Studenten auf Fakultätsebene.
-Er besteht derzeit aus 17 Mitgliedern und wird immer im Wintersemester für ein Jahr neu gewählt.
-Der FSR ist Ansprechpartner bei Fragen und Problemen und veranstaltet die ESE, Professorenstammtische, die Spieleabende, die Lehrevaluationen und diverse Turniere.
-Die FSR-Sitzungen sind jede Woche Montags um 18:30 im Großen Ratssaal INF/1004 in der ersten Etage.
-Die Sitzungen sind öffentlich, Gäste sind herzlich willkommen und die Protokolle findet man auf dem FTP-Server (ftp://ftp.ifsr.de), genauso wie Klausuren vergangener Jahre oder (fürs Hauptstudium / Master) Komplexprüfungsprotokolle.
-Der FSR hat sein Büro in der INF/E017 (hinter der Treppe, neben dem Cafe ASCII).
-Auf der Website ifsr.de gibt es Informationen zum Studium und Neuigkeiten rund um die Fakultät.
-Auch als Ersti kann man sich gerne für den nächsten FSR zur Wahl stellen. Als Tutor natürlich erst recht :)
+\begin{itemize}
+	\item Vertretung der Studenten auf Fakultätsebene
+	\item besteht derzeit aus 17 Mitgliedern
+	\item wird immer im Wintersemester für ein Jahr neu gewählt
+	\item Ansprechpartner bei Fragen und Problemen
+	\item veranstaltet die ESE, Professorenstammtische, die Spieleabende, die Lehrevaluationen, usw.
+	\item Sitzungen: jede Woche montags um 18:30 im Großen Ratssaal APB/1004, sind öffentlich, Gäste sind herzlich willkommen
+	\item FTP-Server (ftp://ftp.ifsr.de): Protokolle, Klausuren vergangener Jahre, Komplexprüfungsprotokolle (fürs Hauptstudium / Master)
+	\item Website ifsr.de: soll in naher Zukunft überarbeitet werden, trotzdem gibt es regelmäßige Infos zu Spieleabenden, zum Studium usw.
+	\item Büro: APB/E017 (hinter der Treppe, neben dem Cafe ascii)
+	\item Auch Erstis können sich gern zur nächsten Wahl für den FSR aufstellen lassen! Alternativ suchen wir für Ende November wieder viele Wahlhelfer!
+\end{itemize}
 
 \subsection{Studentenrat}
-Der Studentenrat, kurz StuRa, ist die Vertretung der Studenten auf Uniebene.
-Er versucht studentische Interessen gegenüber der Universitätsleitung durchzusetzen, er verteilt Gelder und bietet Beratung zu BAföG, Sozialem und bei Rechtsfragen/-problemen.
-Die Mitglieder sind Entsandte aus den FSRen der einzelnen Fakultäten.
-Auch die Sitzungen des StuRa sind öffentlich und finden zweiwöchentlich an Donnerstagen ab 19:30 Uhr statt.
+\begin{itemize}
+	\item kurz StuRa, Vertretung der Studenten auf Uniebene
+	\item vertritt studentische Interessen gegenüber der Universitätsleitung
+	\item verteilt Gelder
+	\item Beratungsangebote u.a. zu BAföG, Sozialem und bei Rechtsfragen/-problemen
+	\item Mitglieder sind Entsandte aus den FSRen der einzelnen Fakultäten
+	\item Sitzungen: zweiwöchentlich an Donnerstagen ab 19:30 Uhr in der StuRa-Baracke, ebenfalls öffentlich
+\end{itemize}
 
 \section{Studentisches Leben}
+
 \subsection{Studentenclubs}
-In Dresden gibt es 16 Studentenclubs, die von ehrenamtlich von Studenten geführt werden.
-Eine Auflistung gibt es z.B. unter http://www.vdsc.de (Vereinigung Dresdner Studentenclubs).
-Der Studentenclub, der zur Fakultät Informatik \textit{gehört}, ist das \glqq CountDown\grqq\ in der Nähe des Straßburger Platzes.
+\begin{itemize}
+	\item 15 Stück in Dresden $\rightarrow$ damit kann man Dresden durchaus Hauptstadt der Studentenclubs nennen
+	\item ehrenamtlich von Studenten geführt
+	\item  Auflistung z.B. unter http://www.vdsc.de (Vereinigung Dresdner Studentenclubs)
+	\item Club, der zur Fakultät Informatik \textit{gehört}: \glqq CountDown\grqq\ -- kurz: das CD (Nähe Straßburger Platz)\\
+	$\rightarrow$ Ausgangspunkt Clubwanderung am Dienstag
+	\begin{itemize}
+		\item früher "Club Dürerstraße", befand sich direkt in der alten Fakultät Informatik und war tagsüber Cafe
+		\item nach Neubau: Cafe ist mit umgezogen: Ausgründung ascii, Club ist auf die Güntzstraße gezogen
+	\end{itemize}
+\end{itemize}
+
 \subsection{Kino}
-Das Kino im Kasten ist ein Studentenkino und befindet sich an der Philosphischen Fakultät in der August-Bebel-Straße.
-Mehr Informationen und das Kinoprogramm gibts unter http://kino-im-kasten.de.
-Das KiK hat seit kurzem wieder geöffnet und freut sich über Besucher.
+\begin{itemize}
+	\item Studentenkino \glqq Kino im Kasten\grqq\ -- kurz KiK in der Philosophischen Fakultät in der August-Bebel-Straße
+	\item Infos und Programm unter http://kino-im-kasten.de
+	\item dort findet am Donnerstag das ESE-Kino statt!
+\end{itemize}
 
 \section{Die Universität}
 \subsection{SLUB}
-Bei der Sächsischen Landes- und Universitätsbibliothek kann man sich als Student kostenlos anmelden und Bücher ausleihen oder sich in die ruhigen Räumlichkeiten zum Lernen setzen.
-Die meisten Informatikbücher befinden sich in der Lehrbuchsammlung im Haupthaus und im gegenüberliegenden \glqq DrePunct\grqq.
+\begin{itemize}
+	\item Sächsischen Landes- und Universitätsbibliothek
+	\item für Studenten kostenlos
+	\item Bücher leihen, ruhige Räumlichkeiten zum Lernen nutzen
+	\item Gruppenräume für gemeinsames Arbeiten vorhanden (ggf. reservieren)
+	\item Informatikbücher befinden sich in der Lehrbuchsammlung im Haupthaus und im gegenüberliegenden \glqq DrePunct\grqq
+\end{itemize}
+
 \subsection{Mensen}
-In allen Mensen der TU Dresden (Alte Mensa, Reichenbachstraße, Siedepunkt, Zeltmensa ...) kann man mit der \glqq Emeal\grqq-Karte bezahlen, die sich per Barzahlung an den Kassen, im Voraus per Kontozahlung am Automaten aufladen lassen oder per Selbstaufladung vom Konto bei Bedarf.
-Die Mensakarten werden während der ESE beim Frühstück für einen Pfand von 5 Euro ausgegeben;
-Wer noch keinen hat, kann auch im FSR-Büro vorbeikommen.
+\begin{itemize}
+	\item naheste Mensa zur Fakultät: Alter Mensa
+	\item Emeal-Karte zum zahlen in allen Mensen und Cafeterien der TU Dresden
+	\item erhältlich in den Mensen oder ganz einfach während der ESE beim Frühstück oder im FSR-Büro
+	$\rightarrow$ Emeal-Bescheinigung (Imma-Bogen), \EUR{5} Kaution, Studentenausweis, Ausweis mitbringen
+	\item Aufladen am Automaten in den großen Mensen, an der Kasse (zum Teil nur mit Bargeld möglich), auf Wunsch per Autoload
+\end{itemize}
 
 \subsection{Unisport}
-Im Universitätssportzentrum kann man aus einer großen Anzahl von Sportarten wählen.
-Die Einschreibung findet auf der Website des USZ (http://tu-dresden.de/ die\_tu\_dresden/zentrale\_einrichtungen/usz/) am Dienstag, den 14.10.2014 je nach Sportart ab 17.00 oder später statt.
+Das Universitätssportzentrum (USZ) biete viele Sportarten an
+\begin{itemize*}
+	\item \textbf{Aktuelles Semester:} wegen der Flüchtlingssituation aktuell nicht das komplette Sportangebot
+	\item Sportprogramm ab 01.10. auf der Homepage des USZ
+	\item Einschreibung WS 15/16 am 13.10. Nachmittags, gestaffelt nach Sportarten
+	\item Preise für Studenten recht günstig (zwischen ca. 15-40 Euro pro Semester je nach Sportart)
+	\item Bei begehrten Sportarten schnell sein, da viele Kurse nach wenigen Minuten voll sind
+\end{itemize*}
 
 \subsection{Sprachkurse}
-Insgesamt bis zu 10 SWS Sprachkurse kann man kostenlos beim Sprachenzentrum LSK belegen.
-Man kann je nach Kurs Sprachzertifikate bekommen oder einfach mal eine neue, fremde Sprachen erlernen.
-Für den Informatik-Master wird Englisch benötigt.
-Website: http://lskonline.tu-dresden.de.
+\begin{itemize*}
+	\item Bis zu 10 SWS kostenlose Sprachkurse beim Sprachenzentrum LSK für jeden Studenten
+	\item Je nach Kurs gibt es Sprachzertifikate
+	\item Für den Informatik-Master wird Englisch benötigt
+	\item Webseite: http://lskonline.tu-dresden.de
+\end{itemize*}
 
 \subsection{Nebenjobs}
-SHKs (Studentische Hilfskräfte) werden überall an der Uni gesucht.
-Viele informatikbezogene werden in der Fakultät per Aushang beworben oder über Ausschreibungen auf der Informatik Fakultätsseite.
+\begin{itemize*}
+	\item \textbf{SHKs (Studentische Hilfskräfte)} werden überall an der Uni gesucht (gerade Informatiker)
+	\item Informatikbezogene Stellenangebote finden sich im APB per Aushang oder auf der Fakultätswebseite
+	\item Es gibt die STAV e.V. (Studentische Arbeitsvermittlung) für weitere Nebenjobs
+\end{itemize*}
 
 \section{Wohnen in Dresden}
 \begin{itemize*}
-	\item Wenn man in Dresden seinen Hauptwohnsitz anmeldet bekommt man ein \glqq Begrüßunggeld\grqq\ von 150 Euro, das man beim Studentenwerk beantragen kann.
-	\item Zweitwohnungssteuer: in Dresden fällig seit 2006, 10\% der jährlichen Netto-Kaltmiete (aber nur wenn echte Zweitwohnung; http://www.dresden.de/media/ pdf/infoblaetter/Handzettel\_Info\_Zweitwohnungssteuer.pdf).
-	Als Bewohner einer WG oder eines Wohnheimes kann man allerdings Widerspruch einlegen und muss die Steuer nicht zahlen.
-	\item Den neuen Wohnsitz sollte man innerhalb von 14 Tagen bei den Meldestellen angeben (http://dresden.de/de/02/or/anliegen/c\_241.php).
-	\item Im Studentenheim sind am Anfang des Semesters meist bereits keine Plätze mehr frei.
-	Fragen kann man aber trotzdem.
+	\item Hauptwohnsitz nach Dresden $\rightarrow$ \glqq Begrüßungsgeld\grqq\ von 150 Euro, beantragen beim Studentenwerk
+	\item Zweitwohnungssteuer in Dresden seit 2006 fällig. Bewohner einer WG oder eines Wohnheims kann Widerspruch einlegen
+	\item neuen Wohnsitz innerhalb von 14 Tagen melden\\
+	(http://www.dresden.de/de/rathaus/ortsaemter.php).
 \end{itemize*}
 
 \section{Dresden}
 
 \subsection{Altstadt}
 \begin{itemize*}
-	\item Kulturelles Zentrum: Semperoper, Zwinger, Frauenkirche,...
-	\item Einkaufsmeile
+	\item Kulturelles Zentrum: Semperoper, Zwinger, Frauenkirche, etc.
+	\item \textbf{Stadtführung am Freitag empfehlen}
+	\item Einkaufsmeile mit Prager Straße, Altmarktgalerie, etc.
+	\item Schauspielhaus: Erstis kommen für \EUR{3,50} ins Theater, auch sonst für Studenten extrem preiswert
 \end{itemize*}
 
 \subsection{Neustadt}
 \begin{itemize*}
-	\item Kneipenviertel
-	\item viele Programmkinos: Schauburg, Casablanca, Thalia,...
-	\item einmal im Jahr großes Straßenfest: BRN - Bunte Republik Neustadt.
+	\item Kneipenviertel, alternatives Viertel
+	\item viele Programmkinos: Schauburg, Casablanca, Thalia, etc.
+	\item einmal im Jahr großes Straßenfest: BRN - Bunte Republik Neustadt
 \end{itemize*}
 
 \section{Ansprechpartner bei Problemen}
 \begin{itemize*}
 	\item FSR: fsr@ifsr.de
 	\item Studiendekan: Prof. Weber (allgemein), Prof. Friedrich (Lehramtsstudiengänge), Prof. Hölldobler (englischsprachige Studiengänge).
-	\item Studentische Studienberatung: Sascha Peukert (studienberatung-inf@ifsr.de) und Kilian Költzsch (studienberatung-minf@ifsr.de) oder beide unter studienberatung@ifsr.de.
+	\item Studentische Studienberatung: Sascha Peukert (studienberatung-inf@ifsr.de) und Philipp Heisig (studienberatung-minf@ifsr.de) oder beide unter studienberatung@ifsr.de.
 	\item studentische Vertreter im Prüfungsausschuss: Sascha Peukert, Duc Tien Nguyen.
 	\item Prüfungsamt (INF/3039 und 3040).
 	\item Rechtsverbindliche Auskünfte gibt es aber nur vom Prüfungsausschuss, Anträge über das Prüfungsamt stellen!
 \end{itemize*}
 
 \section{Rundgang durch die Fakultät}
-Macht einen kleinen Rundgang durch die Fakultät und zeigt mindestens: ASCII, FSR-Büro, E023 (Vorlesungssaal), Rechenzentrum, Prüfungsamt.
-Anschließend könnte man in die Alte Mensa mensen gehen.
-
+Macht einen kleinen Rundgang durch die Fakultät und zeigt mindestens: ascii, FSR-Büro, E023 (Vorlesungssaal), Rechenzentrum, Prüfungsamt, Ratssaal (1004) mit Hinweis auf FSR Sitzungen
+Bietet doch euren Erstis einen Besuch in der Mensa an!
 
 \end{document}
