@@ -25,19 +25,19 @@
 \contentsline {section}{Studentische Selbstverwaltung}{13}
 \contentsline {subsection}{Fachschaftsrat}{13}
 \contentsline {subsection}{Studentenrat}{13}
-\contentsline {section}{Studentisches Leben}{13}
-\contentsline {subsection}{Studentenclubs}{13}
+\contentsline {section}{Studentisches Leben}{14}
+\contentsline {subsection}{Studentenclubs}{14}
 \contentsline {subsection}{Kino}{14}
 \contentsline {section}{Die Universit\IeC {\"a}t}{14}
 \contentsline {subsection}{SLUB}{14}
-\contentsline {subsection}{Mensen}{14}
-\contentsline {subsection}{Unisport}{14}
-\contentsline {subsection}{Sprachkurse}{14}
+\contentsline {subsection}{Mensen}{15}
+\contentsline {subsection}{Unisport}{15}
+\contentsline {subsection}{Sprachkurse}{15}
 \contentsline {subsection}{Nebenjobs}{15}
-\contentsline {section}{Wohnen in Dresden}{15}
-\contentsline {section}{Dresden}{15}
-\contentsline {subsection}{Altstadt}{15}
-\contentsline {subsection}{Neustadt}{15}
-\contentsline {section}{Ansprechpartner bei Problemen}{15}
+\contentsline {section}{Wohnen in Dresden}{16}
+\contentsline {section}{Dresden}{16}
+\contentsline {subsection}{Altstadt}{16}
+\contentsline {subsection}{Neustadt}{16}
+\contentsline {section}{Ansprechpartner bei Problemen}{16}
 \contentsline {section}{Rundgang durch die Fakult\IeC {\"a}t}{16}
-\contentsline {chapter}{Namenspatrone}{17}
+\contentsline {chapter}{Namenspatrone}{18}
