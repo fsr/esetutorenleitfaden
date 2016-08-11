@@ -5,39 +5,34 @@
 \contentsline {section}{Anwesenheit in der ESE}{2}
 \contentsline {section}{Scheine}{3}
 \contentsline {section}{\IeC {\"U}ber das Tutorium}{3}
-\contentsline {section}{Vor dem Tutorium zu erledigende Dinge}{4}
+\contentsline {section}{Vor dem Tutorium zu erledigende Dinge}{3}
 \contentsline {chapter}{In den Tutorien zu vermittelnde Informationen}{5}
 \contentsline {section}{Einf\IeC {\"u}hrung}{5}
 \contentsline {section}{ESE-Woche}{5}
-\contentsline {subsection}{Montag}{7}
+\contentsline {subsection}{Dienstag}{7}
 \contentsline {subsection}{Dienstag}{7}
 \contentsline {subsection}{Mittwoch}{7}
 \contentsline {subsection}{Donnerstag}{7}
 \contentsline {subsection}{Freitag}{8}
 \contentsline {subsection}{Samstag}{8}
 \contentsline {subsection}{Einschreibung}{8}
-\contentsline {subsection}{Seminargruppentreffen}{9}
+\contentsline {subsection}{Seminargruppentreffen}{8}
 \contentsline {section}{Studium}{9}
 \contentsline {paragraph}{Aufbau und Ablauf}{9}
 \contentsline {paragraph}{Vorlesung, \IeC {\"U}bung, Praktikas}{10}
 \contentsline {paragraph}{Pr\IeC {\"u}fungen}{10}
-\contentsline {section}{Drucken, Kopieren, Rechentechnik}{12}
-\contentsline {section}{Studentische Selbstverwaltung}{13}
-\contentsline {subsection}{Fachschaftsrat}{13}
-\contentsline {subsection}{Studentenrat}{13}
-\contentsline {section}{Studentisches Leben}{14}
+\contentsline {paragraph}{Sprachkurse}{11}
+\contentsline {section}{SLUB}{12}
+\contentsline {section}{Studentische Selbstverwaltung}{12}
+\contentsline {subsection}{Fachschaftsrat}{12}
+\contentsline {subsection}{Studentenrat}{12}
+\contentsline {subsection}{Weitere Ansprechpartner}{13}
+\contentsline {section}{Drucken, Kopieren, Rechentechnik}{13}
+\contentsline {section}{Studentisches Leben in Dresden}{14}
+\contentsline {subsection}{Unisport}{14}
 \contentsline {subsection}{Studentenclubs}{14}
 \contentsline {subsection}{Kino}{14}
-\contentsline {section}{Die Universit\IeC {\"a}t}{14}
-\contentsline {subsection}{SLUB}{14}
-\contentsline {subsection}{Mensen}{15}
-\contentsline {subsection}{Unisport}{15}
-\contentsline {subsection}{Sprachkurse}{15}
-\contentsline {subsection}{Nebenjobs}{15}
-\contentsline {section}{Wohnen in Dresden}{16}
-\contentsline {section}{Dresden}{16}
-\contentsline {subsection}{Altstadt}{16}
-\contentsline {subsection}{Neustadt}{16}
-\contentsline {section}{Ansprechpartner bei Problemen}{16}
-\contentsline {section}{Rundgang durch die Fakult\IeC {\"a}t}{16}
-\contentsline {chapter}{Namenspatrone}{18}
+\contentsline {section}{Wohnen in Dresden}{15}
+\contentsline {section}{Mensen}{15}
+\contentsline {section}{Rundgang durch die Fakult\IeC {\"a}t}{15}
+\contentsline {chapter}{Namenspatrone}{16}
