@@ -10,6 +10,7 @@
 \usepackage{graphicx}
 \usepackage{eurosym}
 \usepackage{tikzsymbols}
+\usetikzlibrary{shapes}
 \renewcommand*\familydefault{\sfdefault}
 
 \setcounter{secnumdepth}{-1}
@@ -119,7 +120,7 @@ Wir treffen uns in der APB/E023 zum Frühstück.
 
 \section{Einführung}
 \begin{itemize*}
-%TODO: Prüfen, ob das so ist.
+%: Prüfen, ob das so ist.
 %\item Wenn ihr ausländische Studierende in eurer Gruppe habt, schickt sie bitte in den APB 1004 (Ratsaal). Das Tutorium ist von 11:10 – 13:30\\
 \item Wenn ihr Master Studierende in eurer Gruppe habt, schickt sie bitte in den APB E023
 \item Macht eine kleine Vorstellungsrunde, um euch kennenzulernen und die Atmosphäre ein bisschen aufzulockern.
@@ -264,11 +265,35 @@ Die Wanderung findet ein Wochenende später statt! Bei Interesse bitte an Julius
 	\item Alle wichtigen Infos: Prüfungs- und Studienordnung sowie Studienablaufplan und Modulbeschreibungen findet ihr auf der ESE-Webseite unter Infos
 	\item studiengangsspezifischen Informationen im ersten Seminargruppentreffen
 	\item Studiums besteht aus Modulen, Module können Vorlesungen, Übungen, Praktika und Seminare beinhalten:\\\\
-	\includegraphics[width=\linewidth]{./modul.pdf} TODO: Manuel tixt die Zeichnung neu
+	
 	\begin{center}
 	Am besten konkret an AuD und Mathe 1 zeigen!
 	Die Zeichnung am besten auf die Tafel malen oder was eigenes ausdenken.
 	\end{center}
+	\begin{tikzpicture}
+		\draw (0,0) rectangle (4,-5);
+		\node at (2,0) [below] {AuD};
+		\draw (0,-.5) -- (4,-.5);
+		\node (v1) [ellipse,draw] at (1.6,-1.5) {Vorlesung};
+		\node (u1) [ellipse,draw] at (2.8,-2.7) {\"Ubung};
+		\draw (0,-3.5) -- (4,-3.5);
+		\node (p1) [ellipse,draw] at (2,-4.3) {Pr\"ufung};
+		
+		\draw (5,0) rectangle (12 ,-5);
+		\node at (8.5,0) [below] {Mathe};
+		\draw (5,-.5) -- (12,-.5);
+		\draw (8.5,-.5) -- (8.5,-3.3);
+		\node at (6.75,-.5) [below] {LAG};
+		\node at (10.25,-.5) [below] {DIS};
+		\draw (5,-1) -- (12, -1);
+		\node (v2) [ellipse,draw] at (6.6,-1.6) {Vorlesung};
+		\node (u2) [ellipse,draw] at (7.2,-2.7) {\"Ubung};
+		\node (v3) [ellipse,draw] at (10.1,-1.6) {Vorlesung};
+		\node (u3) [ellipse,draw] at (10.7,-2.7) {\"Ubung};
+		\draw (5,-3.3) -- (12,-3.3);
+		\node (p2) [ellipse,draw] at (7.4,-3.85) {Nikolauspr\"ufung};
+		\node (p3) [ellipse,draw] at (10.5,-4.4) {Pr\"ufung};
+	\end{tikzpicture}
 	\item Viele Module: Nur eine Lehrveranstaltung (Vorlesung + Übung)
 	\item Jedes Modul hat eine ausgeschriebene Anzahl an Leistungspunkten (LP).\\
 	1LP = 30h \glqq Arbeitsbelastung\grqq\ (über das Semester verteilt) bestehend aus:
