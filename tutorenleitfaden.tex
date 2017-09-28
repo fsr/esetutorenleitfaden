@@ -13,6 +13,9 @@
 \usetikzlibrary{shapes}
 \renewcommand*\familydefault{\sfdefault}
 
+\definecolor{esebgcolor}{rgb}{0.051, 0.373, 0.596} % wip-ish color -- #0D5F98
+\definecolor{esefgcolor}{rgb}{1, 1, 1}
+
 \setcounter{secnumdepth}{-1}
 \setcounter{tocdepth}{1}
 \begin{document}
@@ -690,7 +693,13 @@ Bietet euren Erstis doch einen Besuch in der Mensa an!
 		  und Logik)
 \end{itemize*}
 
+\pagebreak
 
-\includegraphics[width=\linewidth]{./zeitplan_2016.pdf}
+\begin{tikzpicture}[timebox/.style={draw,text=esefgcolor,fill=esebgcolor,font=\scriptsize\bfseries,align=left}]
+    \node at (0,0) {\includegraphics[width=\linewidth]{zeitplan_2017.pdf}};
+    \node[timebox,text width=2.16cm,minimum height=1.0cm] at (-5.29,8.24) {Start für\\Tutoren};
+    \node[timebox,text width=2.14cm,minimum height=1.0cm] at (-0.27,8.24) {Start für\\Tutoren};
+    \node[timebox,text width=2.18cm,minimum height=3.05cm] at (4.67,-8.94) {Tutorengrillen};
+\end{tikzpicture}
 
 \end{document}
