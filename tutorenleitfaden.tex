@@ -1,7 +1,6 @@
-\documentclass[a4paper,12pt]{report}
-\usepackage[utf8]{inputenc}
-\usepackage{fontspec}
+\documentclass[a4paper,12pt]{scrreprt}
 \usepackage[ngerman]{babel}
+\usepackage{fontspec}
 \usepackage[parfill]{parskip}
 %\usepackage{eurosans}
 \usepackage[top=3cm, left=3cm]{geometry}
@@ -14,8 +13,9 @@
 \usepackage{footnote}
 \usepackage{framed}
 \usetikzlibrary{shapes}
-\usepackage{csquotes}
+\usepackage[autostyle=true]{csquotes}
 \renewcommand*\familydefault{\sfdefault}
+
 
 \definecolor{esebgcolor}{rgb}{1, 1, 1} % wip-ish color -- #0D5F98
 \definecolor{esefgcolor}{rgb}{0,0,0}
@@ -24,31 +24,30 @@
 \setcounter{tocdepth}{1}
 \begin{document}
 
-\title{\huge{\textbf{Vor dem Tutorium lesen und wichtige Punkte markieren!}}\\\ \\\ \\{Leitfaden für ESE-Tutoren 2019}}
+\title{\huge{\textbf{Vor dem Tutorium lesen und wichtige Punkte markieren!}}\\\ \\\ \\{Leitfaden für ESE-Tutoren 2020}}
+
+
 \date{}
+
 \author{}
 \maketitle
 
-\section*{Anwesenheit in der ESE}
+\section*{\enquote{Anwesenheit} in der ESE}
 Eure Anwesenheit ist zu folgenden Zeiten ausdrücklich erforderlich:
 \begin{itemize*}
-	\item Aufgabenbereiche, in denen ihr explizit als Helfer eingetragen seid
-	\item Frühstück, Tütentragen und Begrüßung am Montag
-	\item Bunter Nachmittag am Montag
-	\item Campusschnitzeljagd am Dienstag
-	\item Wanderung am Mittwoch
-	\item Einschreibung am Donnerstag
-	\item ESE-Spiel am Freitag
-	\item Tutorenabschlussgrillen am Samstag 19:00 Uhr % noch nicht festgelegt
+    \item Aufgabenbereiche, in denen ihr explizit als Helfer eingetragen seid
+    \item Einschreibung am Dienstag
+    \item Campusschnitzeljagd am Dienstag
+    \item Wanderung am Mittwoch
+    \item ESE-Spiel am Freitag
 \end{itemize*}
-Wichtig für die einzelnen Termine sind auch die vorherigen Tutorenbriefings im Ratssaal. Diese sind unbedingt zu besuchen und werden bei Nichterscheinen mit dem Nichtmögen von Tutoren geahndet.\\
-WICHTIG: Das Briefing am Donnerstagmorgen ist die einzige Möglichkeit als Nicht-Ersti eine ESE-Tasse zu erhalten.
+Wichtig für die einzelnen Termine sind auch die vorherigen Tutorenbriefings im bbb. Diese sind unbedingt zu besuchen und werden bei Nichterscheinen mit dem Nichtmögen von Engeln geahndet.\\
+WICHTIG: Das Briefing am Dienstagmorgen ist die einzige Möglichkeit als Nicht-Ersti eine ESE-Tasse zu erhalten.
 Termine für die Briefings sind:
 \begin{itemize*}
-	\item Montag   		08:00 Uhr
-	\item Dienstag 		12:00 Uhr (Mittag bitte vorher essen)
-	\item Donnerstag	08:00 Uhr
-	\item Freitag		13:00 Uhr (Mittag bitte vorher essen)
+    \item Montag        08:00 Uhr
+    \item Dienstag      08:00 Uhr
+    \item Freitag       13:00 Uhr
 \end{itemize*}
 
 Die Anwesenheit zu allen anderen Veranstaltungen ist wünschenswert!
@@ -57,31 +56,26 @@ Die Anwesenheit zu allen anderen Veranstaltungen ist wünschenswert!
 
 \begin{itemize*}
     \item \textbf{Proud to be a Tutor:} Trage während der Woche zu allen ESE-Veranstaltungen (auch abends) das ESE-Shirt und dein Namensschild.
-    \item \textbf{Präsenz zeigen:} Sei während der ESE so oft wie möglich da, komm zum Frühstück usw.\ mit den Erstis ins Gespräch.
     \item \textbf{Sei hilfsbereit:} Siehst du einen einsamen Ersti, hilf ihm, Anschluss zu finden. Ein Ersti fragt dich etwas oder ein Ersti guckt sich verloren um? Setze alles daran zu helfen!
 \end{itemize*}
 
 \section*{Erreichbarkeit der ESE-Orga}
 
 Solltet ihr Probleme oder Fragen haben, meldet euch bitte bei der ESE-Orga.
+
 Während der ESE-Woche sollte immer ein Orga-Mitglied im Büro sitzen.
 Außerdem erreicht ihr die ESE-Orga
 \begin{itemize*}
-	\item per Mail: ese-orga@ifsr.de
-	\item telefonisch: 0351/463-38226
+    \item per Mail: ese-orga@ifsr.de
+    \item telefonisch: 0351/463-38226
 \end{itemize*}
 
 
 \tableofcontents
 \chapter{Hinweise für Tutoren}
-\section{Himmel}
-Scheine gibt es schon lange nicht mehr. Zur Motivation gibt's den Himmel. Der Himmel ist im Raum APB/E008 zu finden und soll als Rückzugsort für euch als Tutoren dienen. Dort könnt ihr euch entspannen und gleichzeitig Feedback an der Tafel hinterlassen. Doch so gemütlich es dort sein mag, solltet ihr doch hin und wieder mal nach draußen gehen und Teil der ESE sein.
-
-\section{Tutorengrillen}
-Das Tutorengrillen findet am Samstag, den 12.10.2019, um 19:00 Uhr im Coutdown stattfinden.
 
 \section{Über das Tutorium}
-Ziel des Tutoriums ist die Vermittlung von Informationen rund um das Studium. Der Inhalt des zweiten Teils dieser Handreichung ist das Minimum, was ihr in den Tutorien vermitteln sollt. Ihr könnt die Stichpunkte gerne noch mit eigenen Einfällen ergänzen.\\
+Ziel des Tutoriums ist die Vermittlung von Informationen rund um das Studium. Der Inhalt dieser Handreichung ist das Minimum, was ihr in den Tutorien vermitteln sollt. Ihr könnt die Stichpunkte gerne noch mit eigenen Einfällen ergänzen.\\
 Beachtet dabei:
 \begin{itemize*}
 \item Die Informationen sollten möglichst \textbf{unparteiisch} und \textbf{nicht wertend} vermittelt werden.
@@ -92,296 +86,263 @@ Insbesondere sollte man vermeiden, den Erstis schon vorab Angst vor bestimmten V
 
 \section{Vor dem Tutorium zu erledigende Dinge}
 \begin{itemize*}
-\item Überlegt euch, wie ihr die Informationen vortragen wollt.
-\item Den Raum bitte vorher schon mal suchen, falls ihr nicht sicher wisst, wo er sich befindet.
-\item Am ESE-Montag zum Briefing um 08:00 da sein und mithelfen!
+    \item Überlegt euch, wie ihr die Informationen vortragen wollt.
+    %\item Den Raum bitte vorher schon mal suchen, falls ihr nicht sicher wisst, wo er sich befindet.
+    \item Sucht euch einen geeigneten Ort, von dem aus ihr zu zweit vor einer Webcam stehen könnt.
+    \item Am ESE-Montag zum Briefing um 08:00 da sein!
 \end{itemize*}
-\label{tabelle}
-\begin{center}
-\vspace{1cm}
-\begin{tabular}[h]{|l|l|}
-	\hline
-	\textbf{Namenspatron}		& \textbf{Raum}\\ \hline
-	Edsger Dijkstra				& BAR/218\\
-	Kathleen Antonelli			& BAR/E85\\
-	Kurt Gödel					& BAR/I89\\
-	Konrad Zuse					& BAR/213\\
-	Tim Berners-Lee				& BAR/106\\
-	John von Neumann			& GER/51\\
-	Dennis Ritchie				& GER/49\\
-	Alan Turing 				& GER/50\\
-	Ada Lovelace				& GER/09\\
-	Grace Hopper				& GER/07\\
-	Constanze Kurz				& GER/54\\
-	Radia Perlman               & APB/3105\\
-	Adele Goldberg				& APB/1096\\
-	Linus Torvalds				& APB/E001\\
-	Noam Chomsky				& APB/E005\\
-	Christiane Floyd			& APB/E006\\
-	Stephen Cook				& APB/E007\\
-	Ken Thompson				& APB/E008\\
-	Donald Knuth				& APB/E009\\
-	Margaret Hamilton			& APB/E010\\
-	Andreas Pfitzmann			& APB/E023\\
-	\hline
-\end{tabular}
-\end{center}
+
 
 \chapter{In den Tutorien zu vermittelnde Informationen}
 
 \section{Ablaufplan}
+
 \begin{itemize*}
-	\item Einführung
-	\item Überblick ESE-Woche
-	\item Kennenlernen
-	\item Außerhalb vom Studium
-	\item Gemeinsam Mensen
+    \item Einführung
+    \item Überblick ESE-Woche
+    \item Kennenlernen
+    \item Außerhalb vom Studium
 \end{itemize*}
 
 \section{Einführung}
 \begin{itemize*}
-	\item Wenn ihr Masterstudierende in eurer Gruppe habt, schickt sie in die APB/E023.
-	\item Fragt für den Spieleabend nach Grillgutestimates. Zur Wahl stehen Steak, Bratwurst (Rind oder Schwein), Grillkäse, Hähnchenfleisch und Veganes (Pommes oder Grillgemüse). 
-	\item \textbf{Wichtig!} Hierbei geht es nicht um das Studium. Versucht deshalb Fragen zum Studiengang zu vermeiden.
-	\item Schreibt am besten an die Tafel, was ihr gerne von den Erstis wissen möchtet.
-	\item Schreibt eure Emailadressen an die Tafel, für Nachfragen.
-	\item Erzählt etwas zu eurem Namenspatron. Informationen findet ihr im Anhang.
+    \item Wenn ihr Masterstudierende in eurer Gruppe habt, schickt sie in den entsprechenden bbb.
+    \item Motiviert die Studierenden, den Videochat zu starten, damit es persönlicher wird. Es sollte niemand gezwungen werden, sein Gesicht zu zeigen, es ist aber für den ersten Kontakt zu Kommilitonen hilfreich.
+    \item \textbf{Wichtig!} Hierbei geht es nicht um das Studium. Versucht deshalb Fragen zum Studiengang zu vermeiden.
+    \item Schreibt eure Emailadressen in den chat, für Nachfragen.
+    \item Erzählt etwas zu eurem Namenspatron. Informationen findet ihr im Anhang.
 \end{itemize*}
+
+
 
 \section{Überblick ESE-Woche}
 
 \begin{framed}
-Auf der ESE-Webseite (https://ese.ifsr.de) befindet sich der jeweils aktuelle Ablaufplan, Weblinks und Infos zum Studium. Im Laufe der Woche folgen Stundenpläne, Termine zum Seminargruppentreffen und die Termine zu Nerd101. Kurzfristige Änderungen und Ankündigungen werden via Twitter (@ifsr) bekanntgegeben.
+Auf der ESE-Webseite (https://ese.ifsr.de) befindet sich der jeweils aktuelle Ablaufplan, Weblinks und Infos zum Studium. Kurzfristige Änderungen und Ankündigungen werden via Twitter (@ifsr) bekanntgegeben.
 \end{framed}
 
 \begin{itemize*}
-	\item In diesem Jahr lässt sich die ESE-Webseite als \enquote{Progressive Web App} bzw. als Shortcut\footnote[2]{https://ese.ifsr.de/2019/pwa} auf den Mobilgeräten installieren. Damit hat man direkt Zugriff auf die Ablaufpläne.
-	\item Ebenfalls gibt's den Zeitplan auch im iCal-Format (ICS Datei) zum Download.
-	Kann man sich direkt in den Kalender importieren.
-	\item Ablaufpläne der ESE werden parallel offline am FSR-Büro hinter der Wendeltreppe hängen.
-	\item Die wichtigen Dinge der ESE-Tüte durchgehen. Weist insbesondere auf \enquote{The Manual} hin.
-	\item Geht die ESE-Woche durch und sagt kurz etwas zu den wichtigsten Programmpunkten (siehe Zeitplan und folgende Anmerkungen zu den einzelnen Tagen, erklärt das Farbschema des Zeitplans im ESE-heft: grün \rightarrow Menschen kennenlernen, rot \rightarrow wichtige Infos, orange \rightarrow essen, blau \rightarrow Immatrikulationsveranstaltung)
-	\item Bitte betont nochmal, dass die ESE sehr gut geeignet ist, um Kommilitonen kennenzulernen.
+    \item Den Zeitplan gibts auch im iCal-Format (ICS Datei) zum Download.
+    Kann man sich direkt in den Kalender importieren.
+    \item Da die Studierenden ihre Beutel noch nicht erhalten habt, weist bitte auf die online version von \enquote{The Manual} hin (auf der ESE webseite verlinkt).
+    \item Geht die ESE-Woche durch und sagt kurz etwas zu den wichtigsten Programmpunkten.
+    \item Bitte betont nochmal, dass die ESE sehr gut geeignet ist, um Kommilitonen kennenzulernen.
 \end{itemize*}
-Ort der Begrüßung ist der Hörsaal HSZ/004 (Hörsaalzentrum) und der der Vorträge ist die ganze Woche über die APB/E023.
 
 % TODO Plan von unten Einfügen und Kommentare auf Seite daneben
 
-\textbf{Montag}
+\subsection{Der Rest von Montag}
+
+\textbf{Vorstellung der Lehrenden}
 \begin{itemize*}
-	\item 08:30 -- 09:45 Frühstück
-	\item 10:00 -- 12:30 Begrüßung im HSZ/004 und Tutorien (siehe Tabelle auf S.\pageref{tabelle})
-	\item 12:30 -- 13:30 Mittagspause 
-	\small{\textit{%
-			\begin{itemize*}
-				\item Geht zusammen mit euren Erstis in die Mensa!
-				\item Mensakarten gibt es immer beim Frühstück oder nachher im FSR-Büro
-				\item E-Meal aufladen erklären! Automaten, Infopoint, Autoload, an der Kasse
-				\item Am Nachmittag Sprechstunde im FSR-Büro
-			\end{itemize*}
-	}}
-	\item 13:30 -- 15:30 Vorstellung der Lehrenden
-	\item 15:30 -- 18:00 Bunter Nachmittag
-	\item ab 18:00 Kennenlernspieleabend
+    \item Passiert genau wie die Einführungsveranstaltung via Stream.
 \end{itemize*}
 
-\textbf{Dienstag}
+\textbf{Speedfriending}
 \begin{itemize*}
-	\item 09:00 -- 09:45 Frühstück
-	\item 10:00 -- 12:00 Vorträge zum Studium
-	\item 12:00 -- 13:00 Mittagspause
-	\item 13:00 -- 16:00 Campusschnitzeljagd
-	\item 17:30 -- 19:00 Vorglühen im CountDown
-	\small{\textit{%
-			\begin{itemize*}
-				\item Möglichkeit auf Freigetränke.
-			\end{itemize*}
-	}}
-	\item ab 19:00 Clubwanderung
-	\small{\textit{%
-			\begin{itemize*}
-				\item Startet beim Studentenclub CountDown (Güntzstraße 22)
-			\end{itemize*}
-	}}
-\end{itemize*}
-
-\textbf{Mittwoch}
-\begin{itemize*}
-	\item Wanderung (parallel zu Katerfrühstück)
-	\small{\textit{%
-			\begin{itemize*}
-				\item Zeit und Treffpunkt: Start am Hauptbahnhof, Gleis 18, 09:00 Uhr
-				\item Bitte Interesse erfragen
-			\end{itemize*}
-	}}
-	\item 09:00 -- 13:00 Kater-Frühstück
-	\item 13:00 -- 17:00 Nerd101
-	\item ab 19.00 ascii-Abend
+    \item beginnt 17:00, dauert die gesamte ESE an.
+    \item \texttt{friends.ese.ifsr.de} bildet Jitsiräume mit zwei Teilnehmenden. Link dazu auf der Webseite.
+    \item Die Maximaldauer eines Gespräches wird nicht enforced. Die Studierenden sollen selbst darauf achten, sich hin und wieder neu zuweisen zu lassen.
 \end{itemize*}
 
 
-\textbf{Donnerstag}
+\subsection{Dienstag}
+
+\textbf{Einschreibung}
 \begin{itemize*}
-	\item 09:00 -- 12:00 Frühstück und parallele Einschreibung
-	\item 12:00 -- 13:00 Mittagspause
-	\item 13:00 -- 16:00 Taschenausgabe, Infomarkt und Imma-Veranstaltung
-	\item 16:00 -- 18:00 Feierliche Immatrikulation
-	\item ab 20:00 ESE Kino im KiK. Freier Eintritt.
+    \item Die Systeme zur Einschreibung in Veranstaltungen werden vorgestellt.
+    \item \textbf{!! WICHTIG !!} Es gibt in diesem Jahr keine Stundenpläne.
+    \item \texttt{distribute.ese.ifsr.de} bildet Jitsiräume mit je einem Engel und einem Ersti. Link dazu auf der Webseite.
+    \item Durchschnittliche Einschreibezeit liegt bei 10 Minuten.
+    \item Wartezeiten sollten eingeplant werden.
+\end{itemize*}
+
+\textbf{Vorträge zu Auslandsaufenthalt und Studentischer Selbstverwaltung}
+\begin{itemize*}
+    \item Passiert genau wie die Einführungsveranstaltung via Stream.
+\end{itemize*}
+
+\textbf{Campusschnitzeljagd}
+\begin{itemize*}
+    \item Realisiert durch \texttt{gather.town}. Link dazu auf der Webseite.
+    \item \texttt{gather.town} ist ein custom 2d Spiel mit Positional audio.
+    \item Nach Klick auf den Link gibt es eine Anleitung. Sollte alles selbsterklärend sein.
+\end{itemize*}
+
+\textbf{Clubwanderung}
+\begin{itemize*}
+    \item Beginn 19:00 Uhr am Club Countdown (Güntzstraße 22).
+    \item In kleinen Gruppen wird mit Hygienekonzept die Dresdner Studierendenclubszene erkundet.
+    \item Ein Engel ist dabei.
 \end{itemize*}
 
 
-\textbf{Freitag}
-\begin{itemize*}
-	\item 09:00 -- 11:00 Frühstück, Seminargruppentreffen und parallel Vorträge
-	\item 11:00 -- 13:00 Seminargruppentreffen und parallel Vorträge
-	\small{\textit{%
-			\begin{itemize*}
-				\item Beide dieser Termine sind relevant, um alles mitzubekommen
-			\end{itemize*}
-	}}
-	\item 13:00 -- 14:00 Mittagspause
-	\item 14:00 -- 17:00 ESE-Spiel
-	\item 19:00 Neustadt Kneipentour
-\end{itemize*}
+\subsection{Mittwoch}
 
-\textbf{Samstag}
+\textbf{Wanderung}
 \begin{itemize*}
-	\item 13:00 -- 15:00 Stadtführung
-	\small{\textit{%
-			\begin{itemize*}
-				\item bitte erfragt grob das Interesse
-			\end{itemize*}
-	}}
+    \item Abfahrt irgendwan am Hauptbahnhof
+    \item Verschiedene kleine Gruppen
 \end{itemize*}
 
 
-\subsection{Einschreibung}
+\textbf{Spieleabend}
 \begin{itemize*}
-	\item Für die Einschreibung am Donnerstag werden Nummern gezogen.
-	\item Gruppiert euch mit euren Freunden, die auch den gleichen Stundenplan wollen wie ihr, zusammen und zieht gemeinsam Nummern, sodass ihr gemeinsam in eine Seminargruppe kommen könnt.
-	\item Anschließend werdet ihr von uns in die Stundenpläne eingetragen.
-	\item Mitzubringen sind:
-	\begin{itemize*}
-		\item Studentenausweis
-		\item ZIH-Login bzw.\ den ZIH-Coupon
-		\item Wunschstundenplan sowie Alternativen (vorher raussuchen, sonst kein Einlass!)
-	\end{itemize*}
-	\item Zu beachten ist, dass die Einschreiben nur von der Informatik-Fakultät möglich ist. Erst am Tag danach ist eine Einschreibung von außerhalb möglich.
-	\item Während der Einschreibung ist das Eintragen in die zwei folgenden Mailinglisten/Mailverteiler möglich:
-	\begin{itemize*}
-		\item \textbf{FSR-info} -- FSR Informationen für Studenten (sehr ratsam)
-		\item \textbf{extern} -- Jobangebote werden über diese Mailingliste verbreitet
-		\item und diverse andere, für das Einschreiben auf die Mailingliste siehe \\ https://www.ifsr.de/fsr:news:quicklinks\_fuer\_die\_einschreibung
-	\end{itemize*}
+    \item Findet in Präsenz am Mittwoch und Donnerstag abend statt.
+    \item Maximal 100 Teilnehmer.
+    \item Anmeldung auf der Webseite.
+    \item ascii stellt sich vor.
+    \item agdsn stellt sich vor.
+    \item 20:15 Filmvorführung \enquote{Im Toten Winkel} mit Einführung der Filmemacher für maximal 20 Personen.
 \end{itemize*}
 
-\subsection{Seminargruppentreffen}
+
+\subsection{Donnerstag}
+\textbf{Vorträge zum Studium}
 \begin{itemize*}
-	\item Der gewählte Stundenplan bestimmt die Seminargruppe!
-	\item Allgemeiner Sinn der Seminargruppen: Unterstützung der Erstis, Gruppenbildung, Mentor als Ansprechpartner bei Problemen und Vermittlung aller relevanten Informationen zum Studiengang
-	\item \enquote{Als Einzelgänger kommt man im Studium nicht weit}
-	\item Bitte betonen: An allen Treffen teilnehmen!
-	\item Erstes Seminargruppentreffen: nach der Einschreibung am Freitag um 9 Uhr bzw. 11 Uhr (je nach Seminargruppe -- genauer Termin wird bei der Einschreibung dann mitgegeben).
-	\item Weitere Seminargruppentreffen stehen im Stundenplan
+    \item Vorträge zu Studienangelegenheiten und Sprachkursen
+    \item Passiert genau wie die Einführungsveranstaltung via Stream.
+\end{itemize*}
+
+\textbf{Nerd::101}
+\begin{itemize*}
+    \item Workshops zu themen, die Informatikstudierende ganz gut gebrauchen können
+    \item Finden in bbb statt. Links zu den einzelnen Workshops auf der Webseite.
+\end{itemize*}
+
+\textbf{Spieleabend}
+\begin{itemize*}
+    \item siehe Spieleabend Mittwoch
+\end{itemize*}
+
+
+\subsection{Freitag}
+\textbf{Seminargruppentreffen}
+\begin{itemize*}
+    \item Wichtige Informationen rund um das Studium. Noch detaillierter als vorher.
+    \item Allgemeiner Sinn der Seminargruppen: Unterstützung der Erstis, Gruppenbildung, Mentor als Ansprechpartner bei Problemen und Vermittlung aller relevanten Informationen zum Studiengang
+    \item Bitte betonen: An allen Treffen teilnehmen!
+    \item Finden in bbb statt. Links dazu auf der Webseite.
+\end{itemize*}
+
+\textbf{ESE-Spiel}
+\begin{itemize*}
+    \item Simulation des gesamten Studiums in spielerischer Form.
+    \item Findet auf dem Minetest server der ESE statt: \texttt{pet.ifsr.de}.
+    \item Anleitung gibts auf der Webseite. Erklärt sich von selbst.
+\end{itemize*}
+
+
+\textbf{Neustadt Kneipentour}
+\begin{itemize*}
+    \item foobar
+\end{itemize*}
+
+
+\subsection{Samstag}
+
+\textbf{Stadtführung}
+\begin{itemize*}
+    \item DIY Stadtführung. Bitte Gruppen suchen und bereitgestellte Routen ablaufen. Infos auf der Webseite.
 \end{itemize*}
 
 
 \section{Kennenlernen}
 \begin{itemize*}
-	\item Dieser Punkt ist der Hauptfokus neben der Informationsvermittlung, lasst euch dafür ausreichend Zeit.
-	\item Versucht ein lockeres Gespräch aufzubauen!
-	\item Spielt gemeinsam mit den Erstis ein paar Spiele zum Kennenlernen 
-	\item Im Folgenden haben wir für euch ein paar Ideen für Spiele aufgelistet, die ihr mit den Erstis so in der Reihenfolge machen KÖNNT, d.h. wenn Ihr kreativ seid, dann könnt Ihr euch selbst Spiele ausdenken :)
+    \item Dieser Punkt ist der Hauptfokus neben der Informationsvermittlung, lasst euch dafür ausreichend Zeit.
+    \item Versucht ein lockeres Gespräch aufzubauen!
+    \item Spielt gemeinsam mit den Erstis ein paar Spiele zum Kennenlernen
+    \item Im Folgenden haben wir für euch ein paar Ideen für Spiele aufgelistet, die ihr mit den Erstis so in der Reihenfolge machen KÖNNT, d.h. wenn Ihr kreativ seid, dann könnt Ihr euch selbst Spiele ausdenken :)
 \end{itemize*}
 
 
 \subsection{Kennlernspiele}
 
-\subsubsection{Human Sort} 
-\begin{itemize*} 
-	\item Stellt euch mit den Erstis nach verschiedenen Sortierungskriterien in einer Reihe auf, z.B. sortiert nach
-	\item ... dem Abstand von eurem Geburtsort zu Dresden 
-	\item ... dem Zeitpunkt wann ihr das erste Mal an einem Rechner genutzt habt
-	\item ... der geschätzten voraussichtlichen Studienzeit 
-\end{itemize*} 
+\subsubsection{Human Sort}
+\begin{itemize*}
+    \item Stellt euch mit den Erstis nach verschiedenen Sortierungskriterien in einer Reihe auf, z.B. sortiert nach
+    \item ... dem Abstand von eurem Geburtsort zu Dresden
+    \item ... dem Zeitpunkt wann ihr das erste Mal an einem Rechner genutzt habt
+    \item ... der geschätzten voraussichtlichen Studienzeit
+\end{itemize*}
 
 \subsubsection{Unionize!}
 \begin{itemize*}
-	\item Legt 3-4 Kategorien fest, wie z.B. Lieblingsessen, Welches Tier wärst du am liebsten, Hobbies
-	\item Schreibt Stichpunkte zu den Kategorien auf einen Zettel
-	\item Findet größtmögliche Gruppen von Erstis mit Gemeinsamkeiten
-	\item Überlegt euch Gruppennamen
-	\item Stellt die Gruppen vor
+    \item Legt 3-4 Kategorien fest, wie z.B. Lieblingsessen, Welches Tier wärst du am liebsten, Hobbies
+    \item Schreibt Stichpunkte zu den Kategorien auf einen Zettel
+    \item Findet größtmögliche Gruppen von Erstis mit Gemeinsamkeiten
+    \item Überlegt euch Gruppennamen
+    \item Stellt die Gruppen vor
 \end{itemize*}
 
 \subsubsection{Gegenseitiges Vorstellen}
 \begin{itemize*}
-	\item Legt drei Vorstellungsfragen fest, wie z.B. Was ist deine Mission? Was machst du am Liebsten am Rechner? Wohin willst du?
-	\item Findet euch paarweise zusammen
-	\item Stellt euch gegenseitig vor und beantwortet die Fragen
-	\item Alle beantworten die Fragen für die jeweils andere Person in der ganzen Gruppe
+    \item Legt drei Vorstellungsfragen fest, wie z.B. Was ist deine Mission? Was machst du am Liebsten am Rechner? Wohin willst du?
+    \item Findet euch paarweise zusammen
+    \item Stellt euch gegenseitig vor und beantwortet die Fragen
+    \item Alle beantworten die Fragen für die jeweils andere Person in der ganzen Gruppe
 \end{itemize*}
 
 \section{Außerhalb des Studiums}
 
 \subsection{Wohnen in Dresden}
 \begin{itemize*}
-	\item neuen Wohnsitz innerhalb von 14 Tagen melden
-	\item Hauptwohnsitz nach Dresden verlegen $\rightarrow$ \EUR{150} \enquote{Begrüßungsgeld}\\
-	$\rightarrow$ beantragen beim Studentenwerk
-	\item Zweitwohnungssteuer in Dresden seit 2006 fällig. Bewohner einer WG oder eines Wohnheims kann Widerspruch einlegen
-	\item Fragt wer in welchen Stadtbezirken wohnt, damit die Erstis Nachbarn in ihrer Nähe kennenlernen
+    \item neuen Wohnsitz innerhalb von 14 Tagen melden
+    \item Hauptwohnsitz nach Dresden verlegen $\rightarrow$ \EUR{150} \enquote{Begrüßungsgeld}\\
+    $\rightarrow$ beantragen beim Studierendenwerk
+    \item Zweitwohnungssteuer in Dresden seit 2006 fällig. Bewohner einer WG oder eines Wohnheims kann Widerspruch einlegen
+    \item Fragt wer in welchen Stadtbezirken wohnt, damit die Erstis Nachbarn in ihrer Nähe kennenlernen
 \end{itemize*}
 
 \subsection{Essen}
 \begin{itemize*}
-	\item Emeal-Karte zum Zahlen in allen Mensen und Cafeterien der TU Dresden
-	\item erhältlich in den Mensen oder ganz einfach während der ESE beim Frühstück oder im FSR-Büro
-	$\rightarrow$ Emeal-Bescheinigung (Imma-Bogen), \EUR{5} Kaution, Studentenausweis, Ausweis mitbringen
-	\item Aufladen am Automaten in den großen Mensen, an der Kasse (zum Teil nur mit Bargeld möglich), auf Wunsch per Autoload
-	\item Karte mit Mensen zeigen
-	\item Alternativen zu den Mensen in der Nähe
-	\begin{itemize*}
-		\item Firat, Dersim
-		\item Konsum und Bäckerei Möbius am Münchner Platz
-		\item dm, Netto und Bäckerei Schmidt am Nürnberger Platz
-		\item Müsli, belegte Brötchen, Donuts und Snacks im ASCII
-	\end{itemize*}
+    \item Emeal-Karte zum Zahlen in allen Mensen und Cafeterien der TU Dresden
+    \item erhältlich in den Mensen oder im FSR-Büro
+    $\rightarrow$ Emeal-Bescheinigung (Imma-Bogen), \EUR{5} Kaution, Studierendenausweis, Ausweis mitbringen
+    \item Aufladen am Automaten in den großen Mensen, an der Kasse (zum Teil nur mit Bargeld möglich), auf Wunsch per Autoload
+    \item Karte mit Mensen zeigen
+    \item Alternativen zu den Mensen in der Nähe
+    \begin{itemize*}
+        \item Firat, Dersim
+        \item Konsum und Bäckerei Möbius am Münchner Platz
+        \item dm, Netto und Bäckerei Schmidt am Nürnberger Platz
+        \item Müsli, belegte Brötchen, Donuts und Snacks im ASCII
+    \end{itemize*}
 \end{itemize*}
 
 \subsection{Engagment}
 
 \subsubsection{ASCII}
 \begin{itemize*}
-	\item Das Studentencafe in der Informatik Fakultät, gleich neben dem FSR Büro
-	\item Wird von einem Verein betrieben, bei dem ihr unkompliziert Mitglied werden könnt und ist auf Unterstützung von Studierenden angewiesen
+    \item Das Studierendencafe in der Informatik Fakultät, gleich neben dem FSR Büro
+    \item Wird von einem Verein betrieben, bei dem ihr unkompliziert Mitglied werden könnt und ist auf Unterstützung von Studierenden angewiesen
 \end{itemize*}
 
 \subsubsection{Hochschulgruppen und StuRa Referate}
 \begin{itemize*}
-	\item Für viele Themen gibt es Hochschulgruppen (Technik, LGBTIQ+, Politik, Vernetzung, Kultur, Nachhaltigkeit)
-	\item Nennt ein paar Beispiele (AG DSN, ESN, elbflorace, tuuwi, what)
-	\item Über 100 Hochschulgruppen die z.T. vom Studierendenrat finanziell unterstützt werden
-	\item Einige stellen sich am bunten Nachmittag vor
+    \item Für viele Themen gibt es Hochschulgruppen (Technik, LGBTIQ+, Politik, Vernetzung, Kultur, Nachhaltigkeit)
+    \item Nennt ein paar Beispiele (AG DSN, ESN, elbflorace, tuuwi, what)
+    \item Über 100 Hochschulgruppen die z.T. vom Studierendenrat finanziell unterstützt werden
+    \item Einige stellen sich am bunten Nachmittag vor
 \end{itemize*}
 
-\subsubsection{Studentenclubs}
+\subsubsection{Studierendenclubs}
 \begin{itemize*}
-	\item 15 Stück in Dresden (in der Regel Kneipen)
-	\item ehrenamtlich von Studenten geführt
-	\item Auflistung z.B. unter http://www.vdsc.de (Vereinigung Dresdner Studentenclubs)
-	\item Club, der zur Fakultät Informatik gehört: \enquote{CountDown} -- kurz: das CD (Nähe Straßburger Platz)\\
-	$\rightarrow$ Ausgangspunkt Clubwanderung am Dienstag
+    \item ca. 15 Stück in Dresden (in der Regel Kneipen)
+    \item ehrenamtlich von Studierenden geführt
+    \item Auflistung z.B. unter http://www.vdsc.de (Vereinigung Dresdner Studierendenclubs)
+    \item Club, der zur Fakultät Informatik gehört: \enquote{CountDown} -- kurz: das CD (Nähe Straßburger Platz)\\
+    $\rightarrow$ Ausgangspunkt Clubwanderung am Dienstag
 \end{itemize*}
 
 \subsection{Unisport}
 \begin{itemize*}
-	\item Das Universitätssportzentrum (USZ) bietet unterschiedlichste Sportarten an.
+    \item Das Dresdner Hochschulsportzentrum (DHSZ) bietet unterschiedlichste Sportarten an.
 
-	\item Einschreibung WS 19/20 am 15.10. ab 17 Uhr, gestaffelt nach Sportarten
-	\item Man kann  bei allen Sportkursen nur ein mal stornieren und wieder neu anmelden! 
-	\item Preise für Studenten recht günstig (zwischen ca. 25-50 Euro pro Semester)
-	\item Bei begehrten Sportarten schnell sein. Viele Kurse nach wenigen Sekunden voll!
+    \item Einschreibung WS 20/21 am 20.10. ab 17 Uhr, gestaffelt nach Sportarten
+    \item Man kann  bei allen Sportkursen nur ein mal stornieren und wieder neu anmelden!
+    \item Preise für Studierende recht günstig (zwischen ca. 25-50 Euro pro Semester)
+    \item Bei begehrten Sportarten schnell sein. Viele Kurse nach wenigen Sekunden voll!
 \end{itemize*}
 
 \subsection{Kultur}
@@ -390,56 +351,47 @@ Palaissommer
 
 \subsubsection{Neustadt}
 \begin{itemize*}
-	\item \enquote{Die Scheune} -- Café, Musik, Poetry, ...
-	\item Montag ist Studierendentag in Rosis Amüsierlokal
-	\item Jeden Sommer findet die bunte Republik Neustadt und das Hechtfest statt, beides sind relativ große Anwohnerfeste mit viel Essen, Musik, Getränken und Feierlaune auf den Straßen
+    \item \enquote{Die Scheune} -- Café, Musik, Poetry, ...
+    \item Montag ist Studierendentag in Rosis Amüsierlokal
+    \item Jeden Sommer findet die bunte Republik Neustadt und das Hechtfest statt, beides sind relativ große Anwohnerfeste mit viel Essen, Musik, Getränken und Feierlaune auf den Straßen
 \end{itemize*}
 
 \subsubsection{Semperoper}
 \begin{itemize*}
-	\item Es gibt Studentenkarten, die immer 30 Minuten vor Vorstellungsbeginn für 10 Euro an der Abendkasse verkauft werden, sofern noch Karten für die entsprechende Vorstellung vorhanden sind.
+    \item Es gibt Studierendenkarten, die immer 30 Minuten vor Vorstellungsbeginn für 10 Euro an der Abendkasse verkauft werden, sofern noch Karten für die entsprechende Vorstellung vorhanden sind.
 \end{itemize*}
 
 \subsubsection{Slams}
 \begin{itemize*}
-	\item Comedy/Poetry/Science Slams
-	\item Meist in der Schauburg, manchmal im Hörsaalzentrum - als Campus Slam -
+    \item Comedy/Poetry/Science Slams
+    \item Meist in der Schauburg, manchmal im Hörsaalzentrum - als Campus Slam -
 \end{itemize*}
 
 \subsubsection{Museen}
 \begin{itemize*}
-	\item Regelmäßige Veranstaltungen und Ausstellungen im Hygienemuseum - nicht nur eine Ausstellung zu Hygiene
-	\item Technische Sammlungen
-	\item Verkehrsmuseum 
-	\item Asisi Panometer Dresden
-	\item Galerie der \enquote{Alten Meister} für Kunstinteressierte
+    \item Regelmäßige Veranstaltungen und Ausstellungen im Hygienemuseum - nicht nur eine Ausstellung zu Hygiene
+    \item Technische Sammlungen
+    \item Verkehrsmuseum
+    \item Asisi Panometer Dresden
+    \item Galerie der \enquote{Alten Meister} für Kunstinteressierte
 \end{itemize*}
 
 \subsubsection{Theater und Kabarett}
 \begin{itemize*}
-	\item Staatsschauspiel Dresden
-	\item Boulevardtheater Dresden -- Comedie, Theater, Kabarett
-	\item Die Herkuleskeule im Kulturpalast
+    \item Staatsschauspiel Dresden
+    \item Boulevardtheater Dresden -- Comedie, Theater, Kabarett
+    \item Die Herkuleskeule im Kulturpalast
 \end{itemize*}
 
 \subsubsection{Kino}
 \begin{itemize*}
-	\item Studentenkino \enquote{Kino im Kasten}
-	\item Dort findet am Donnerstag das ESE-Kino statt!
-	\item Filme sind häufig kostenlos oder sehr günstig zu sehen
+    \item Studierendenkino \enquote{Kino im Kasten}
+    \item Dort findet am Donnerstag das ESE-Kino statt!
+    \item Filme sind häufig kostenlos oder sehr günstig zu sehen
 \end{itemize*}
 
-\section{Grillen}
-Fragt bitte die Erstsemester was sie sich für das Grillen am Montag wünschen. Ihr solltet eine Liste mit Grillgut und Preisen erhalten haben. Notiert euch die Mengen und gebt sie an das ESE-Orga Team weiter.
-
-\section{Neustadt-Kneipentour}
-Fragt bitte die Erstsemester, ob sie bei der Neustadt-Kneipentour am Freitag ab 19 Uhr teilnehmen möchten. Ihr solltet eine Liste mit Anzahl der Personen und Anzahl von Präferenz an Bier, Cocktails und Shisha anfertigen (Mehrfachnennung möglich). Notiert euch die Mengen und gebt sie an das ESE-Orga Team weiter.
-
 \bigskip
 \bigskip
-\begin{center}
-\huge{\textbf{Geht mit euren Erstis mensen ... und streichelt sie!}}\footnote[42]{\#ErstiStreicheln - Bitte rechtliche Lage vorher klären.}
-\end{center}
 \chapter{Namenspatrone}
 \section*{Alan Turing (1912 - 1954)}
 \begin{itemize*}
@@ -592,7 +544,7 @@ Fragt bitte die Erstsemester, ob sie bei der Neustadt-Kneipentour am Freitag ab 
 
 \section*{Constanze Kurz (geb. 1974)}
 \begin{itemize*}
-    \item Deutsche 
+    \item Deutsche
     \item Sprecherin des Chaos Computer Clubs (CCC)
     \item Theodor-Heuss-Medaille für ihr vorbildliches demokratisches Verhalten
     \item 2014 Toleranzpreis der Evangelischen Akademie Tutzing in der Kategorie Zivilcourage
@@ -604,7 +556,7 @@ Fragt bitte die Erstsemester, ob sie bei der Neustadt-Kneipentour am Freitag ab 
     \item Amerikanerin
     \item maßgebliche Arbeit an Netzwerkprotokollen
     \item Design von Internetrouting
-    \item USENIX Lifetime award 
+    \item USENIX Lifetime award
 \end{itemize*}
 
 \section*{Adele Goldberg (geb. 1945)}
@@ -688,6 +640,8 @@ Fragt bitte die Erstsemester, ob sie bei der Neustadt-Kneipentour am Freitag ab 
 \end{itemize*}
 
 \pagebreak
-    
-    \includepdf[angle=90]{zeitplan_2019.pdf};
+
+\includepdf[landscape=true]{zeitplan_2020.pdf}
+
+
 \end{document}
